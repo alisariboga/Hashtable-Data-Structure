@@ -32,6 +32,7 @@ public class HashTableArray<T> {
             if (arrayValue.getKey() == key){
                 value = (T) arrayValue.getValue();
             }
+            arrayValue = arrayValue.next;
         }
         return value;
     }
